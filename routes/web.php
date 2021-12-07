@@ -29,6 +29,19 @@ Route::prefix('/app')->group(function(){
 });
 
 
+//redirecionamento de rotas
+Route::get('/rota1', function() {
+    echo 'Rota1';
+})->name('site.rota1');
+
+Route::get('/rota2', function(){
+    //echo 'Rota2';
+    return redirect()->route('site.rota1');
+})->name('site.rota2'); 
+
+//Route::redirect('/rota2', '/rota1');
+
+
 //ROTA DE TESTE
 /* Route::get('/contato/{nome}/{categoria_id}', 
     function(
