@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PrincipalController;
+use App\Http\Controllers\SobreNosController;
+use App\Http\Controllers\ContatoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,13 +18,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\PrincipalController::class, 'principal']);
 
-Route::get('/sobre-nos', function() {
-    return 'Sobre nos';
-});
+Route::get('/sobrenos', [\App\Http\Controllers\SobreNosController::class, 'sobrenos']);
 
-Route::get('/contato', function() {
-    return 'Contato';
-});
+Route::get('/contato', [\App\Http\Controllers\ContatoController::class, 'contato']);
+
 
 /**
  * Principais verbos HTTP
