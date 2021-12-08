@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PrincipalController;
 use App\Http\Controllers\SobreNosController;
 use App\Http\Controllers\ContatoController;
+use App\Http\Controllers\TesteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,17 +30,10 @@ Route::prefix('/app')->group(function(){
 });
 
 
-//redirecionamento de rotas
-Route::get('/rota1', function() {
-    echo 'Rota1';
-})->name('site.rota1');
 
-Route::get('/rota2', function(){
-    //echo 'Rota2';
-    return redirect()->route('site.rota1');
-})->name('site.rota2'); 
+Route::get('/teste/{p1}/{p2}', [\App\Http\Controllers\TesteController::class, 'teste'])->name('teste');
 
-//Route::redirect('/rota2', '/rota1');
+
 
 Route::fallback(function() {
     echo 'A rota acessada não existe. <a href="'.route('site.index').'">Clique aqui para</a> ir para a pagina inicial';
