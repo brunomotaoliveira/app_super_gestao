@@ -5,6 +5,16 @@
 
     /* 
     if(empty($variavel)) {} // retorna true se a variavel estiver vazia
+
+    Variavel com valor vazio em PHP
+    - ''
+    - 0
+    - 0.0
+    - '0'
+    - null
+    - false
+    - array()
+    - $var
      */
 
 @endphp
