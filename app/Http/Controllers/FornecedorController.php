@@ -25,7 +25,7 @@ class FornecedorController extends Controller
         condicão ? se verdadeiro : (condicao ? se verdadeiro : se falso);
         */
 
-        echo isset($fornecedores[1]['cnpj']) ? 'CNPJ informado' : 'CNPJ não informado';
+        echo isset($fornecedores[0]['cnpj']) ? 'CNPJ informado' : 'CNPJ não informado';
 
 
         return view('app.fornecedor.index', compact('fornecedores'));
