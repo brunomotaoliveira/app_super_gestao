@@ -4,7 +4,7 @@
 @php
 
     /* 
-    if(isset($variavel)) {} // retorna true se a variavel estiver definida
+    if(empty($variavel)) {} // retorna true se a variavel estiver vazia
      */
 
 @endphp
