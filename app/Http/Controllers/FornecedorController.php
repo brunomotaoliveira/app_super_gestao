@@ -19,7 +19,9 @@ class FornecedorController extends Controller
             ]
             
         ];
-        return view('app.fornecedor.index', compact('fornecedores'));
+        $teste = 'cyx';
+
+        return view('app.fornecedor.index', compact('fornecedores', 'teste'));
 
     }
 }
