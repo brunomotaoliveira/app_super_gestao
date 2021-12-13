@@ -6,19 +6,20 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
-## Sistema Super Gestão
+
+### Sistema Super Gestão
 
 Sistema desenvolvido apenas para estudos em Laravel
 
-## Tela Principal
+### Tela Principal
 
 ![](https://github.com/brunomotadev/app_super_gestao/blob/main/public/img/imggit/principal.png)
 
-## Tela Sobre Nós
+### Tela Sobre Nós
 
 ![](https://github.com/brunomotadev/app_super_gestao/blob/main/public/img/imggit/sobre-nos.png)
 
-## Tela Contato
+### Tela Contato
 
 ![](https://github.com/brunomotadev/app_super_gestao/blob/main/public/img/imggit/contato.png)
 
